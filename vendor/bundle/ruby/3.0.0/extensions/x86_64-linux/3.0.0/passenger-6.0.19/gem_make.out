@@ -1,0 +1,22 @@
+current directory: /home/enoch/Documents/bible_api/vendor/bundle/ruby/3.0.0/gems/passenger-6.0.19/src/helper-scripts/download_binaries
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20231202-4748-mt5if7.rb extconf.rb
+Attempting to download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz into /home/enoch/Documents/bible_api/vendor/bundle/ruby/3.0.0/gems/passenger-6.0.19/download_cache
+*** Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: 2023-12-02 09:57:06 ERROR 404: Not Found.
+Attempting to download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz into /home/enoch/Documents/bible_api/vendor/bundle/ruby/3.0.0/gems/passenger-6.0.19/download_cache
+*** Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: 2023-12-02 09:57:06 ERROR 404: Not Found.
+Attempting to download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz into /home/enoch/Documents/bible_api/vendor/bundle/ruby/3.0.0/gems/passenger-6.0.19/download_cache
+*** Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: 2023-12-02 09:57:06 ERROR 403: Forbidden.
+Attempting to download https://github.com/phusion/passenger/releases/download/release-6.0.19/nginx-1.24.0-x86_64-linux.tar.gz into /home/enoch/Documents/bible_api/vendor/bundle/ruby/3.0.0/gems/passenger-6.0.19/download_cache
+Attempting to download https://github.com/phusion/passenger/releases/download/release-6.0.19/agent-x86_64-linux.tar.gz into /home/enoch/Documents/bible_api/vendor/bundle/ruby/3.0.0/gems/passenger-6.0.19/download_cache
+
+current directory: /home/enoch/Documents/bible_api/vendor/bundle/ruby/3.0.0/gems/passenger-6.0.19/src/helper-scripts/download_binaries
+make DESTDIR\= clean
+true
+
+current directory: /home/enoch/Documents/bible_api/vendor/bundle/ruby/3.0.0/gems/passenger-6.0.19/src/helper-scripts/download_binaries
+make DESTDIR\=
+true
+
+current directory: /home/enoch/Documents/bible_api/vendor/bundle/ruby/3.0.0/gems/passenger-6.0.19/src/helper-scripts/download_binaries
+make DESTDIR\= install
+true

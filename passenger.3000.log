@@ -1,0 +1,21 @@
+[ N 2023-12-02 09:59:27.4964 5193/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-12-02 09:59:27.5147 5196/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-12-02 09:59:27.5188 5196/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-12-02 09:59:27.5293 5196/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 5196
+[ N 2023-12-02 09:59:29.8899 5196/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 5286 output: 127.0.0.1 - - [02/Dec/2023:09:59:31 +0000] "HEAD / HTTP/1.1" 200 3933 0.3346
+App 5286 output: 127.0.0.1 - - [02/Dec/2023:10:00:07 +0000] "GET / HTTP/1.1" 200 3933 0.0840
+App 5286 output: 127.0.0.1 - - [02/Dec/2023:10:00:08 +0000] "GET /favicon.ico HTTP/1.1" 404 21 0.0923
+App 5286 output: 127.0.0.1 - - [02/Dec/2023:10:00:48 +0000] "GET /john%203:16 HTTP/1.1" 200 493 0.0725
+
+[ N 2023-12-02 10:02:04.6519 5196/T8 age/Cor/CoreMain.cpp:670 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-12-02 10:02:04.6520 5196/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-12-02 10:02:04.6520 5196/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5286, application /home/enoch/Documents/bible_api (development)
+[ N 2023-12-02 10:02:04.6520 5196/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-12-02 10:02:04.6521 5196/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-12-02 10:02:04.6521 5196/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-12-02 10:02:04.6521 5196/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-12-02 10:02:04.6550 5196/Tc Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-12-02 10:02:04.6550 5196/Tc Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-12-02 10:02:04.6551 5196/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5286, application /home/enoch/Documents/bible_api (development)
+[ N 2023-12-02 10:02:05.1263 5196/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished

@@ -11,3 +11,4 @@ gem 'sequel'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'thin'
+gem "passenger", ">= 5.3.2", require: "phusion_passenger/rack_handler"
