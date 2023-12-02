@@ -56,10 +56,15 @@ This app is served from [bible-api.com](https://bible-api.com/), which anyone ca
 Useful links for Ubuntu 22.0.4 setup for this project:
 
 https://www.atlassian.com/git/tutorials/install-git
+
 https://www.educative.io/answers/how-to-install-ruby-on-linux
+
 https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
+
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
+
 https://stackoverflow.com/questions/67375895/error-error-installing-racc-error-failed-to-build-gem-native-extension
+
 https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost
 
 If you want to host this application yourself, you'll need a Linux server with Ruby, Redis, and MySQL (or MariaDB) installed. Follow the steps below:
