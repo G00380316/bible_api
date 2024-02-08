@@ -15,11 +15,11 @@ module Rack
         end
 
         def write(key, value, options = {})
-          if (expires_in = options[:expires_in])
-            rescuing { setex(key, expires_in, value, raw: true) }
-          else
-            rescuing { set(key, value, raw: true) }
-          end
+        if (expires_in = options[:expires_in])
+          rescuing { setex(key, expires_in, value) }
+        else
+          rescuing { set(key, value) }
+        end
         end
       end
     end
