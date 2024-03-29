@@ -3,6 +3,7 @@ require 'sequel'
 require 'mysql2'
 require 'bible_parser'
 require 'bible_ref'
+require 'dotenv/load'
 
 DB = Sequel.connect(ENV['DATABASE_URL'].sub(%r{mysql://}, 'mysql2://'), charset: 'utf8')
 

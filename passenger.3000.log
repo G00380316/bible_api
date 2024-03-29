@@ -1,0 +1,490 @@
+[ N 2024-01-11 13:33:15.0131 50891/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2024-01-11 13:33:15.0231 50894/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2024-01-11 13:33:15.0232 50894/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2024-01-11 13:33:15.0739 50894/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 50894
+[ N 2024-01-11 13:33:17.3486 50894/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 50992 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 50992 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 50992 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 50992 output:      /tmp/passenger_native_support-t5l8kk.log
+App 50992 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 50992 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 50992 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 50992 output:      Trying next mirror...
+App 50992 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 50992 output:      Trying next mirror...
+App 50992 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 50992 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 50992 output:   --> Passenger will still operate normally.
+App 50992 output: Error: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+App 50992 output:     /home/enoch/projects/bible_api/app.rb:12:in `fetch'
+App 50992 output:     /home/enoch/projects/bible_api/app.rb:12:in `<top (required)>'
+App 50992 output:     config.ru:3:in `require'
+App 50992 output:     config.ru:3:in `block in <main>'
+App 50992 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `instance_eval'
+App 50992 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `initialize'
+App 50992 output:     config.ru:1:in `new'
+App 50992 output:     config.ru:1:in `<main>'
+App 50992 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `eval'
+App 50992 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `preload_app'
+App 50992 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:189:in `block in <module:App>'
+App 50992 output:     /usr/lib/ruby/vendor_ruby/phusion_passenger/loader_shared_helpers.rb:397:in `run_block_and_record_step_progress'
+App 50992 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:188:in `<module:App>'
+App 50992 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+App 50992 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:29:in `<main>'
+[ E 2024-01-11 13:33:18.6565 50894/Tz age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/enoch/projects/bible_api: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+  Error ID: 6bde60eb
+  Error details saved to: /tmp/passenger-error-bzuppt.html
+
+[ E 2024-01-11 13:33:18.6593 50894/T8 age/Cor/Con/CheckoutSession.cpp:281 ]: [Client 1-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 6bde60eb. Please see earlier logs for details about the error.
+App 51087 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 51087 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 51087 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 51087 output:      /tmp/passenger_native_support-1xrw1qh.log
+App 51087 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 51087 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 51087 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 51087 output:      Trying next mirror...
+App 51087 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 51087 output:      Trying next mirror...
+App 51087 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 51087 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 51087 output:   --> Passenger will still operate normally.
+App 51087 output: Error: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+App 51087 output:     /home/enoch/projects/bible_api/app.rb:12:in `fetch'
+App 51087 output:     /home/enoch/projects/bible_api/app.rb:12:in `<top (required)>'
+App 51087 output:     config.ru:3:in `require'
+App 51087 output:     config.ru:3:in `block in <main>'
+App 51087 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `instance_eval'
+App 51087 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `initialize'
+App 51087 output:     config.ru:1:in `new'
+App 51087 output:     config.ru:1:in `<main>'
+App 51087 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `eval'
+App 51087 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `preload_app'
+App 51087 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:189:in `block in <module:App>'
+App 51087 output:     /usr/lib/ruby/vendor_ruby/phusion_passenger/loader_shared_helpers.rb:397:in `run_block_and_record_step_progress'
+App 51087 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:188:in `<module:App>'
+App 51087 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+App 51087 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:29:in `<main>'
+[ E 2024-01-11 13:33:23.6191 50894/T14 age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/enoch/projects/bible_api: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+  Error ID: 79d4746d
+  Error details saved to: /tmp/passenger-error-Ie6O6N.html
+
+[ E 2024-01-11 13:33:23.6213 50894/Ta age/Cor/Con/CheckoutSession.cpp:281 ]: [Client 2-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 79d4746d. Please see earlier logs for details about the error.
+App 51147 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 51147 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 51147 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 51147 output:      /tmp/passenger_native_support-vrkkdy.log
+App 51147 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 51147 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 51147 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 51147 output:      Trying next mirror...
+App 51147 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 51147 output:      Trying next mirror...
+App 51147 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 51147 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 51147 output:   --> Passenger will still operate normally.
+App 51147 output: Error: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+App 51147 output:     /home/enoch/projects/bible_api/app.rb:12:in `fetch'
+App 51147 output:     /home/enoch/projects/bible_api/app.rb:12:in `<top (required)>'
+App 51147 output:     config.ru:3:in `require'
+App 51147 output:     config.ru:3:in `block in <main>'
+App 51147 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `instance_eval'
+App 51147 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `initialize'
+App 51147 output:     config.ru:1:in `new'
+App 51147 output:     config.ru:1:in `<main>'
+App 51147 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `eval'
+App 51147 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `preload_app'
+App 51147 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:189:in `block in <module:App>'
+App 51147 output:     /usr/lib/ruby/vendor_ruby/phusion_passenger/loader_shared_helpers.rb:397:in `run_block_and_record_step_progress'
+App 51147 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:188:in `<module:App>'
+App 51147 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+App 51147 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:29:in `<main>'
+[ E 2024-01-11 13:33:25.3184 50894/T19 age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/enoch/projects/bible_api: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+  Error ID: 36436088
+  Error details saved to: /tmp/passenger-error-GUbmuc.html
+
+[ E 2024-01-11 13:33:25.3208 50894/Tc age/Cor/Con/CheckoutSession.cpp:281 ]: [Client 3-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 36436088. Please see earlier logs for details about the error.
+App 51449 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 51449 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 51449 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 51449 output:      /tmp/passenger_native_support-15sq4v7.log
+App 51449 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 51449 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 51449 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 51449 output:      Trying next mirror...
+App 51449 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 51449 output:      Trying next mirror...
+App 51449 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 51449 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 51449 output:   --> Passenger will still operate normally.
+App 51449 output: Error: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+App 51449 output:     /home/enoch/projects/bible_api/app.rb:12:in `fetch'
+App 51449 output:     /home/enoch/projects/bible_api/app.rb:12:in `<top (required)>'
+App 51449 output:     config.ru:3:in `require'
+App 51449 output:     config.ru:3:in `block in <main>'
+App 51449 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `instance_eval'
+App 51449 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `initialize'
+App 51449 output:     config.ru:1:in `new'
+App 51449 output:     config.ru:1:in `<main>'
+App 51449 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `eval'
+App 51449 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `preload_app'
+App 51449 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:189:in `block in <module:App>'
+App 51449 output:     /usr/lib/ruby/vendor_ruby/phusion_passenger/loader_shared_helpers.rb:397:in `run_block_and_record_step_progress'
+App 51449 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:188:in `<module:App>'
+App 51449 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+App 51449 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:29:in `<main>'
+[ E 2024-01-11 13:34:25.8501 50894/T1e age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/enoch/projects/bible_api: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+  Error ID: 12c5b8a3
+  Error details saved to: /tmp/passenger-error-cIiebR.html
+
+[ E 2024-01-11 13:34:25.8522 50894/Te age/Cor/Con/CheckoutSession.cpp:281 ]: [Client 4-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 12c5b8a3. Please see earlier logs for details about the error.
+App 51517 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 51517 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 51517 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 51517 output:      /tmp/passenger_native_support-168fe4u.log
+App 51517 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 51517 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 51517 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 51517 output:      Trying next mirror...
+App 51517 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 51517 output:      Trying next mirror...
+App 51517 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 51517 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 51517 output:   --> Passenger will still operate normally.
+App 51517 output: Error: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+App 51517 output:     /home/enoch/projects/bible_api/app.rb:12:in `fetch'
+App 51517 output:     /home/enoch/projects/bible_api/app.rb:12:in `<top (required)>'
+App 51517 output:     config.ru:3:in `require'
+App 51517 output:     config.ru:3:in `block in <main>'
+App 51517 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `instance_eval'
+App 51517 output:     /home/enoch/projects/bible_api/vendor/bundle/ruby/3.0.0/gems/rack-2.2.6.4/lib/rack/builder.rb:125:in `initialize'
+App 51517 output:     config.ru:1:in `new'
+App 51517 output:     config.ru:1:in `<main>'
+App 51517 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `eval'
+App 51517 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:101:in `preload_app'
+App 51517 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:189:in `block in <module:App>'
+App 51517 output:     /usr/lib/ruby/vendor_ruby/phusion_passenger/loader_shared_helpers.rb:397:in `run_block_and_record_step_progress'
+App 51517 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:188:in `<module:App>'
+App 51517 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+App 51517 output:     /usr/share/passenger/helper-scripts/rack-preloader.rb:29:in `<main>'
+[ E 2024-01-11 13:34:27.5696 50894/T1j age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/enoch/projects/bible_api: The application encountered the following error: key not found: "REDIS_URL" (KeyError)
+  Error ID: 3734ade9
+  Error details saved to: /tmp/passenger-error-nGSUPU.html
+
+[ E 2024-01-11 13:34:27.5719 50894/Tg age/Cor/Con/CheckoutSession.cpp:281 ]: [Client 5-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 3734ade9. Please see earlier logs for details about the error.
+
+[ N 2024-01-11 13:35:08.4798 50894/T8 age/Cor/CoreMain.cpp:670 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2024-01-11 13:35:08.4798 50894/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2024-01-11 13:35:08.4799 50894/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4799 50894/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4800 50894/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2024-01-11 13:35:08.4800 50894/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2024-01-11 13:35:08.4800 50894/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4800 50894/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4800 50894/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2024-01-11 13:35:08.4800 50894/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4800 50894/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2024-01-11 13:35:08.4800 50894/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4800 50894/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2024-01-11 13:35:08.4800 50894/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4800 50894/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2024-01-11 13:35:08.4800 50894/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2024-01-11 13:35:08.4800 50894/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4800 50894/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2024-01-11 13:35:08.4800 50894/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4801 50894/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2024-01-11 13:35:08.4801 50894/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4801 50894/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4801 50894/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2024-01-11 13:35:08.4801 50894/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2024-01-11 13:35:08.4801 50894/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4801 50894/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2024-01-11 13:35:08.4802 50894/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2024-01-11 13:35:08.4802 50894/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2024-01-11 13:35:08.9021 50894/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2024-01-12 08:26:14.4959 851/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2024-01-12 08:26:14.5097 854/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2024-01-12 08:26:14.5104 854/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2024-01-12 08:26:14.5691 854/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 854
+[ N 2024-01-12 08:26:16.8873 854/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 931 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 931 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 931 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 931 output:      /tmp/passenger_native_support-2xlawl.log
+App 931 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 931 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 931 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 931 output:      Trying next mirror...
+App 931 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 931 output:      Trying next mirror...
+App 931 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 931 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 931 output:   --> Passenger will still operate normally.
+App 985 output: 127.0.0.1 - - [12/Jan/2024:08:26:18 +0000] "HEAD / HTTP/1.1" 200 3933 0.1772
+App 985 output: 127.0.0.1 - - [12/Jan/2024:08:26:23 +0000] "GET / HTTP/1.1" 200 3967 0.0554
+App 985 output: 127.0.0.1 - - [12/Jan/2024:08:26:23 +0000] "GET /favicon.ico HTTP/1.1" 404 21 0.0061
+App 985 output: [ 2024-01-12 08:27:00.7178 985/0x000055d8fb7bc6c0(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 985 output: [ 2024-01-12 08:27:00.7188 985/0x000055d8fb7bc6c0(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 985 output: [ 2024-01-12 08:27:00.7208 985/0x000055d8fb7bc6c0(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 985 output: [ 2024-01-12 08:27:01.7729 985/0x000055d8fb7bc6c0(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 985 output: [ 2024-01-12 08:27:01.7737 985/0x000055d8fb7bc6c0(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 985 output: [ 2024-01-12 08:27:01.7749 985/0x000055d8fb7bc6c0(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 985 output: 127.0.0.1 - - [12/Jan/2024:08:27:10 +0000] "GET / HTTP/1.1" 200 3967 0.0578
+App 985 output: 127.0.0.1 - - [12/Jan/2024:08:27:27 +0000] "GET / HTTP/1.1" 200 3967 0.0617
+App 985 output: 127.0.0.1 - - [12/Jan/2024:08:28:13 +0000] "GET / HTTP/1.1" 200 3967 0.0562
+App 985 output: 127.0.0.1 - - [12/Jan/2024:08:28:19 +0000] "GET / HTTP/1.1" 200 3967 0.0607
+
+[ N 2024-01-12 08:28:57.3759 854/T9 age/Cor/CoreMain.cpp:670 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2024-01-12 08:28:57.3760 854/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2024-01-12 08:28:57.3760 854/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 985, application /home/enoch/projects/bible_api (development)
+[ N 2024-01-12 08:28:57.3763 854/T9 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3763 854/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2024-01-12 08:28:57.3763 854/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3763 854/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3763 854/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2024-01-12 08:28:57.3763 854/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3763 854/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2024-01-12 08:28:57.3763 854/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2024-01-12 08:28:57.3763 854/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3763 854/Tl Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3763 854/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2024-01-12 08:28:57.3763 854/Tj Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3763 854/Tl Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2024-01-12 08:28:57.3763 854/Tj Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2024-01-12 08:28:57.3764 854/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3764 854/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2024-01-12 08:28:57.3764 854/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3764 854/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2024-01-12 08:28:57.3764 854/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3764 854/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2024-01-12 08:28:57.3764 854/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3764 854/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2024-01-12 08:28:57.3764 854/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3764 854/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2024-01-12 08:28:57.3766 854/Tx Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2024-01-12 08:28:57.3766 854/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2024-01-12 08:28:57.3768 854/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 985, application /home/enoch/projects/bible_api (development)
+[ N 2024-01-12 08:28:58.0303 854/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2024-01-27 20:01:35.0001 1160/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2024-01-27 20:01:35.0142 1163/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2024-01-27 20:01:35.0148 1163/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2024-01-27 20:01:35.1036 1163/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 1163
+App 1245 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 1245 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 1245 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 1245 output:      /tmp/passenger_native_support-1j29q4z.log
+App 1245 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 1245 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+[ N 2024-01-27 20:01:37.6688 1163/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 1245 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 1245 output:      Trying next mirror...
+App 1245 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 1245 output:      Trying next mirror...
+App 1245 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 1245 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 1245 output:   --> Passenger will still operate normally.
+App 1314 output: 127.0.0.1 - - [27/Jan/2024:20:01:41 +0000] "HEAD / HTTP/1.1" 200 3933 0.1917
+App 1314 output: [ 2024-01-27 20:02:08.4829 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:02:08.4843 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:02:08.4862 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:02:09.5258 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:02:09.5263 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:02:09.5278 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:02:10.1625 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:02:10.1631 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:02:10.1644 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:03:38.3668 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:03:38.3677 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:03:38.3697 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:03:39.4215 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:03:39.4222 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+App 1314 output: [ 2024-01-27 20:03:39.4236 1314/0x000055c0f453cab8(HTTP helper worker) request_handler/thread_handler.rb ]: *** Passenger RequestHandler warning: someone tried to connect with an invalid connect password.
+
+[ N 2024-01-27 20:03:50.7899 1163/T8 age/Cor/CoreMain.cpp:670 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2024-01-27 20:03:50.7899 1163/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2024-01-27 20:03:50.7900 1163/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1314, application /home/enoch/projects/bible_api (development)
+[ N 2024-01-27 20:03:50.7902 1163/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7902 1163/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2024-01-27 20:03:50.7903 1163/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7903 1163/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2024-01-27 20:03:50.7903 1163/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7903 1163/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2024-01-27 20:03:50.7903 1163/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7903 1163/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7903 1163/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2024-01-27 20:03:50.7903 1163/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2024-01-27 20:03:50.7903 1163/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7903 1163/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2024-01-27 20:03:50.7903 1163/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7903 1163/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7903 1163/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2024-01-27 20:03:50.7904 1163/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2024-01-27 20:03:50.7904 1163/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7904 1163/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2024-01-27 20:03:50.7904 1163/Tr Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7904 1163/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2024-01-27 20:03:50.7904 1163/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7904 1163/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2024-01-27 20:03:50.7904 1163/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7904 1163/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2024-01-27 20:03:50.7905 1163/Tx Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2024-01-27 20:03:50.7905 1163/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2024-01-27 20:03:50.7907 1163/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1314, application /home/enoch/projects/bible_api (development)
+[ N 2024-01-27 20:03:51.6015 1163/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2024-01-30 10:29:31.3091 1363/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2024-01-30 10:29:31.3232 1366/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2024-01-30 10:29:31.3239 1366/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2024-01-30 10:29:31.4109 1366/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 1366
+[ N 2024-01-30 10:29:33.7345 1366/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 1443 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 1443 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 1443 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 1443 output:      /tmp/passenger_native_support-1pnn5g4.log
+App 1443 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 1443 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 1443 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 1443 output:      Trying next mirror...
+App 1443 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 1443 output:      Trying next mirror...
+App 1443 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 1443 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 1443 output:   --> Passenger will still operate normally.
+App 1503 output: 127.0.0.1 - - [30/Jan/2024:10:29:35 +0000] "HEAD / HTTP/1.1" 200 3933 0.1996
+App 1503 output: 127.0.0.1 - - [30/Jan/2024:10:29:46 +0000] "GET / HTTP/1.1" 200 3967 0.0582
+
+[ N 2024-01-30 10:30:08.0001 1366/T8 age/Cor/CoreMain.cpp:670 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2024-01-30 10:30:08.0001 1366/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2024-01-30 10:30:08.0002 1366/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1503, application /home/enoch/projects/bible_api (development)
+[ N 2024-01-30 10:30:08.0004 1366/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0004 1366/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0004 1366/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0004 1366/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2024-01-30 10:30:08.0004 1366/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2024-01-30 10:30:08.0004 1366/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2024-01-30 10:30:08.0004 1366/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0004 1366/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2024-01-30 10:30:08.0005 1366/Th Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0005 1366/Th Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2024-01-30 10:30:08.0005 1366/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0005 1366/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2024-01-30 10:30:08.0005 1366/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0005 1366/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2024-01-30 10:30:08.0005 1366/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0005 1366/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2024-01-30 10:30:08.0005 1366/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0005 1366/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2024-01-30 10:30:08.0005 1366/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0005 1366/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2024-01-30 10:30:08.0005 1366/Tt Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0005 1366/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0005 1366/Tt Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2024-01-30 10:30:08.0005 1366/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2024-01-30 10:30:08.0007 1366/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2024-01-30 10:30:08.0007 1366/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2024-01-30 10:30:08.0009 1366/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1503, application /home/enoch/projects/bible_api (development)
+[ N 2024-01-30 10:30:08.7006 1366/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2024-02-07 09:10:15.4864 866/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2024-02-07 09:10:15.5005 869/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2024-02-07 09:10:15.5013 869/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2024-02-07 09:10:15.5466 869/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 869
+App 946 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 946 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+[ N 2024-02-07 09:10:17.9670 869/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 946 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 946 output:      /tmp/passenger_native_support-1sq87am.log
+App 946 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 946 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 946 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 946 output:      Trying next mirror...
+App 946 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 946 output:      Trying next mirror...
+App 946 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 946 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 946 output:   --> Passenger will still operate normally.
+App 1012 output: 127.0.0.1 - - [07/Feb/2024:09:10:20 +0000] "HEAD / HTTP/1.1" 200 3933 0.3649
+
+[ N 2024-02-07 09:10:26.4411 869/T8 age/Cor/CoreMain.cpp:670 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2024-02-07 09:10:26.4411 869/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2024-02-07 09:10:26.4411 869/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1012, application /home/enoch/projects/bible_api (development)
+[ N 2024-02-07 09:10:26.4414 869/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4414 869/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4414 869/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4414 869/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2024-02-07 09:10:26.4414 869/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2024-02-07 09:10:26.4414 869/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2024-02-07 09:10:26.4414 869/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4414 869/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2024-02-07 09:10:26.4414 869/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4414 869/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4414 869/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4414 869/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2024-02-07 09:10:26.4414 869/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2024-02-07 09:10:26.4414 869/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4414 869/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2024-02-07 09:10:26.4415 869/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2024-02-07 09:10:26.4415 869/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4415 869/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2024-02-07 09:10:26.4415 869/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4415 869/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2024-02-07 09:10:26.4415 869/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4415 869/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2024-02-07 09:10:26.4415 869/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4415 869/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2024-02-07 09:10:26.4416 869/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2024-02-07 09:10:26.4416 869/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2024-02-07 09:10:26.4417 869/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1012, application /home/enoch/projects/bible_api (development)
+[ N 2024-02-07 09:10:27.8086 869/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2024-02-14 19:22:57.4145 3016/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2024-02-14 19:22:57.4279 3019/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2024-02-14 19:22:57.4286 3019/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2024-02-14 19:22:57.4892 3019/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 3019
+App 3088 output:  [passenger_native_support.so] trying to compile for the current user (enoch) and Ruby interpreter...
+App 3088 output:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 3088 output:      Warning: compilation didn't succeed. To learn why, read this file:
+App 3088 output:      /tmp/passenger_native_support-1de2h85.log
+App 3088 output:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 3088 output:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 3088 output:      Could not download https://github.com/phusion/passenger/releases/download/release-6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 3088 output:      Trying next mirror...
+[ N 2024-02-14 19:23:00.4782 3019/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 3088 output:      Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 404
+App 3088 output:      Trying next mirror...
+App 3088 output:      Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/6.0.19/rubyext-ruby-3.0.2-x86_64-linux.tar.gz: The requested URL returned error: 403
+App 3088 output:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 3088 output:   --> Passenger will still operate normally.
+App 3162 output: 127.0.0.1 - - [14/Feb/2024:19:23:01 +0000] "HEAD / HTTP/1.1" 200 3933 0.2588
+App 3162 output: 127.0.0.1 - - [14/Feb/2024:19:23:13 +0000] "GET / HTTP/1.1" 200 3967 0.0585
+App 3162 output: 127.0.0.1 - - [14/Feb/2024:19:23:13 +0000] "GET /favicon.ico HTTP/1.1" 404 21 0.0051
+
+[ N 2024-02-14 19:23:37.4690 3019/T8 age/Cor/CoreMain.cpp:670 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2024-02-14 19:23:37.4691 3019/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2024-02-14 19:23:37.4691 3019/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3162, application /home/enoch/projects/bible_api (development)
+[ N 2024-02-14 19:23:37.4694 3019/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4694 3019/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4694 3019/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4694 3019/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4695 3019/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4695 3019/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2024-02-14 19:23:37.4695 3019/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2024-02-14 19:23:37.4695 3019/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2024-02-14 19:23:37.4695 3019/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2024-02-14 19:23:37.4695 3019/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2024-02-14 19:23:37.4695 3019/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4695 3019/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2024-02-14 19:23:37.4695 3019/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4695 3019/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2024-02-14 19:23:37.4695 3019/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4695 3019/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2024-02-14 19:23:37.4695 3019/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4695 3019/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4696 3019/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2024-02-14 19:23:37.4696 3019/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2024-02-14 19:23:37.4696 3019/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4696 3019/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2024-02-14 19:23:37.4696 3019/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4696 3019/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2024-02-14 19:23:37.4698 3019/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2024-02-14 19:23:37.4699 3019/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2024-02-14 19:23:37.4701 3019/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3162, application /home/enoch/projects/bible_api (development)
+[ N 2024-02-14 19:23:38.3408 3019/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
