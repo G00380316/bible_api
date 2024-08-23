@@ -11,7 +11,7 @@ Dotenv.load
 
 REDIS = Redis.new(url: ENV.fetch('REDIS_URL'))
 
-DB = Sequel.connect(ENV.fetch('DATABASE_URL').sub(%r{mysql://}, 'mysql2://'), charset: 'utf8')
+DB = Sequel.connect(ENV.fetch('DATABASE_URL').sub(%r{mysql://}, 'mysql2://'), charset: 'utf8', max_connections: 10)
 
 use Rack::Attack
 Rack::Attack.cache.store = Rack::Attack::StoreProxy::RedisStoreProxy.new(REDIS)
@@ -47,32 +47,9 @@ end
 def get_translation
   translation = DB['select * from translations where identifier = ?', params[:translation] || 'WEB'].first
   unless translation
-    status 404
-    response = { error: 'translation not found' }
-    return response
+    halt 404, jsonp(error: 'translation not found')
   end
   translation
-end
-
-# Use /?random=verse to generate a random verse.
-def get_random_verse
-  if params[:random] != "verse"
-    nil
-  else
-    translation = get_translation
-    return jsonp(translation[:error]) if translation[:error]
-
-    books_size = DB['select book_num from verses where translation_id = ? order by book_num desc limit 1;', translation[:id]].first[:book_num]
-    book_num = rand(books_size) + 1
-    book = DB['select book from verses where translation_id = ? && book_num = ?;', translation[:id], book_num].first[:book]
-
-    chapters_size = DB['select chapter from verses where translation_id = ? && book_num = ? order by chapter desc limit 1;', translation[:id], book_num].first[:chapter]
-    chapter = rand(chapters_size) + 1
-
-    verses_size = DB['select verse from verses where translation_id = ? && book_num = ? && chapter = ? order by verse desc limit 1;', translation[:id], book_num, chapter].first[:verse]
-    verse = rand(verses_size) + 1
-    "#{book} #{chapter}:#{verse}"
-  end
 end
 
 # pulled from sinatra-jsonp and modified to return a UTF-8 charset
@@ -105,13 +82,19 @@ end
 
 get '/' do
   unless DB.table_exists?(:verses)
+    status 500
     return 'please run import.rb script according to README'
   end
   if params[:random]
     translation = get_translation
     verse = nil
-    while verse.nil? || !BibleRef::Canons::Protestant.new.books.include?(verse[:book_id])
+    attempts = 0
+    while attempts < 10 && (verse.nil? || !BibleRef::Canons::Protestant.new.books.include?(verse[:book_id]))
       verse = DB["select * from verses where translation_id = :translation_id order by rand() limit 1", translation_id: translation[:id]].first
+      attempts += 1
+    end
+    if verse.nil? || !BibleRef::Canons::Protestant.new.books.include?(verse[:book_id])
+      halt 404, jsonp(error: 'error getting verse')
     end
     ref = "#{verse[:book]} #{verse[:chapter]}:#{verse[:verse]}"
     jsonp render_response(verses: [verse], ref: ref, translation: translation)
@@ -122,7 +105,7 @@ get '/' do
       hash[book[:translation_id]] = book[:book]
     end
     https = request.env['HTTP_X_FORWARDED_PROTO'] =~ /https/
-    @host = (https ? 'https://' : 'http://') + (request.env['SERVER_NAME'] || 'bible-api.com') + '/'
+    @host = request.base_url
     erb :index
   end
 end
@@ -143,7 +126,6 @@ end
 
 def display_verse_from(ref_string)
   translation = get_translation
-  return jsonp(translation[:error]) if translation[:error]
   ref = BibleRef::Reference.new(ref_string, language: translation[:language_code])
   if (ranges = ref.ranges)
     if (verses = get_verses(ranges, translation[:id]))
